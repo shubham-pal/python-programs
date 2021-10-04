@@ -1,5 +1,7 @@
 # BFS algorithm in Python
 import collections
+
+
 def bfs(graph, root):
 
     visited, queue = set(), collections.deque([root])
@@ -10,7 +12,7 @@ def bfs(graph, root):
         # Dequeue a vertex from queue
         vertex = queue.popleft()
         print(str(vertex) + " ", end="")
-        
+
         for neighbour in graph[vertex]:
             if neighbour not in visited:
                 visited.add(neighbour)
