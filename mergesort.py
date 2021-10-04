@@ -2,7 +2,7 @@
 def mergeSort(arr):
     if len(arr) > 1:
 
-        mid = len(arr)//2
+        mid = len(arr) // 2
         L = arr[:mid]
         R = arr[mid:]
         mergeSort(L)
@@ -36,7 +36,7 @@ def printList(arr):
     print()
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     arr = [12, 11, 13, 5, 6, 7]
     print("Given array is", end="\n")
     printList(arr)
