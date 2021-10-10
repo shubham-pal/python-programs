@@ -25,11 +25,11 @@ def inorder(root):
     # if root is None,return
     if root == None:
         return
-# traverse left subtree
+    # traverse left subtree
     inorder(root.leftChild)
-# traverse current node
+    # traverse current node
     print(root.data)
-# traverse right subtree
+    # traverse right subtree
     inorder(root.rightChild)
 
 
